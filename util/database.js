@@ -4,7 +4,7 @@ const sequelize = new Sequelize(
     'to-do',
     'root',
     'todo',
-    {dialect: 'mysql', host: 'localhost'};
+    {dialect: 'mysql', host: 'localhost'}
 )
 
 module.exports = sequelize;
