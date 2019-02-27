@@ -6,18 +6,23 @@ const rootDir = require('../util/path');
 
 const router = express.Router();
 
+const tasksList = [];
 
-// tasks/add-list => GET
-router.get('/add-list', (req, res, next) => {
-    console.log('in add-list middleware');
-    res.sendFile(path.join(rootDir, 'views', 'add-list.html'));
+// tasks/add-task => GET
+router.get('/add-task', (req, res, next) => {
+    // console.log('in add-task middleware');
+    res.render('add-task', {
+        pageTitle: 'Add task',
+        path: '/tasks/add-task'
+    });
 });
 
-// tasks/list => POST
-router.post('/list', (req, res, next) => {
-    console.log('allo');
-    console.log(req.body);
+// tasks/add-task => POST
+router.post('/add-task', (req, res, next) => {
+    // console.log(req.body);
+    tasksList.push({ title: req.body.title });
     res.redirect('/');
 });
 
-module.exports = router;
+exports.routes = router;
+exports.tasks = tasksList;
