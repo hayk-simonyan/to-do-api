@@ -1,25 +1,25 @@
-.task-form {
+.product-form {
     width: 20rem;
     max-width: 90%;
     margin: auto;
 }
 
-.task-item {
+.product-item {
     width: 20rem;
     max-width: 95%;
 }
 
-.task__title {
+.product__title {
     font-size: 1.2rem;
     text-align: center;
 }
 
-.task__price {
+.product__price {
     text-align: center;
-    color: #4d4d4d;
+    color: #0B0C10;
     margin-bottom: 0.5rem;
 }
 
-.task__description {
+.product__description {
     text-align: center;
 }

@@ -4,22 +4,21 @@
 
 <body>
     <%- include('includes/navigation.ejs') %>
+
     <main>
         <% if (tasks.length > 0) { %>
             <div class="grid">
                 <% for (let task of tasks) { %>
-                    <article class="card task-item">
+                    <article class="card product-item">
                         <header class="card__header">
-                            <h1 class="task__title"><%= product.title %></h1>
+                            <input type="checkbox" name="task-checkbox" value="Bike">
+                            <h1 class="product__title"><%= task.title %></h1>
                         </header>
-                        <div class="card__image">
-                            <img src="#" alt="image">
-                        </div>
                         <div class="card__content">
-                            <h2 class="task__description">Interesting task</h2>
+                            <p class="product__description">A very interesting book about so many even more interesting things!</p>
                         </div>
                         <div class="card__actions">
-                            <button class="btn">Add to cart</button>
+                            <button class="btn">Edit</button>
                         </div>
                     </article>
                 <% } %>
