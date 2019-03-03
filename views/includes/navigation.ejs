@@ -1,8 +1,21 @@
 <header class="main-header">
     <nav class="main-header__nav">
         <ul class="main-header__item-list">
-            <li class="main-header__item"><a class="<%= path === '/' ? 'active' : '' %>" href="/">Home</a></li>
-            <li class="main-header__item"><a class="<%= path === '/user/add-task' ? 'active' : '' %>" href="/user/add-task">Add Task</a></li>
+            <li class="main-header__item">
+                <a class="<%= path === '/' ? 'active' : '' %>" href="/">Home</a>
+            </li>
+            <li class="main-header__item">
+                <a class="<%= path === '/user/get-tasks' ? 'active' : '' %>" href="/user/get-tasks">Tasks</a>
+            </li>
+            <li class="main-header__item">
+                <a class="<%= path === '/user/add-task' ? 'active' : '' %>" href="/user/add-task">Add Task</a>
+            </li>
+            <li class="main-header__item">
+                <a class="<%= path === '/user/add-list' ? 'active' : '' %>" href="/user/add-list">Add List</a>
+            </li>
+            <li class="main-header__item">
+                <a class="<%= path === '/user/get-lists' ? 'active' : '' %>" href="/user/get-lists">All Lists</a>
+            </li>
         </ul>
     </nav>
 </header>

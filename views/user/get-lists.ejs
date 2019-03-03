@@ -1,0 +1,30 @@
+<%- include('../includes/head.ejs') %>
+    <link rel="stylesheet" href="/css/task.css">
+</head>
+
+<body>
+    <%- include('../includes/navigation.ejs') %>
+
+    <main>
+        <% if (lists.length > 0) { %>
+            <div class="grid">
+                <% for (let task of lists) { %>
+                    <article class="card product-item">
+                        <header class="card__header">
+                            <input type="checkbox" name="task-checkbox" value="Bike">
+                            <h1 class="product__title"><%= task.title %></h1>
+                        </header>
+                        <div class="card__content">
+                            <p class="product__description">A very interesting book about so many even more interesting things!</p>
+                        </div>
+                        <div class="card__actions">
+                            <button class="btn">Edit</button>
+                        </div>
+                    </article>
+                <% } %>
+            </div>
+        <% } else { %>
+            <h1>No Lists Found!</h1>
+        <% } %>
+    </main>
+<%- include('../includes/end.ejs') %>
