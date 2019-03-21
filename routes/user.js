@@ -1,27 +1,21 @@
-const path = require('path');
-
 const express = require('express');
 
-const tasksController = require('../controllers/tasks');
+const taskController = require('../controllers/tasks.js');
 
 const router = express.Router();
 
-// /user/add-task => GET
-router.get('/add-task', tasksController.getAddTask);
+router.get('/myDay', taskController.getMyDay);
 
-// /user/add-task => POST
-router.post('/add-task', tasksController.postAddTask);
+router.get('/important', taskController.getImportant);
 
-// /user/get-tasks => GET
-router.get('/get-tasks', tasksController.getTasks);
+router.get('/planned', taskController.getPlanned);
 
-// /user/add-list => GET
-router.get('/add-list', tasksController.getAddList);
+router.get('/tasks', taskController.getTasks);
 
-// /user/add-list => POST
-router.post('/add-list', tasksController.postAddList);
+router.get('/add-task', taskController.getAddTask);
 
-// /user/get-lists => GET
-router.get('/get-lists', tasksController.getLists);
+router.post('/add-task', taskController.postAddTask);
+
+router.get('/', taskController.getHome);
 
 module.exports = router;
