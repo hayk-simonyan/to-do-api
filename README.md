@@ -1,8 +1,3 @@
-# ToDo-App
-## RESTful Todos API
+# Complete RESTful Todos API 
+### Built with Node, Express, and Mongo
 
-Built with Node.js
-
-1. Clone this repo
-1. run `npm install`
-1. run `node index.js`

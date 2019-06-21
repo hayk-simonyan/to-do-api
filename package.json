@@ -1,30 +1,16 @@
 {
-  "name": "todo-v1.0",
+  "name": "todos_api",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hayk77/ToDo-App.git"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Hayk Simonyan",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/hayk77/ToDo-App/issues"
-  },
-  "homepage": "https://github.com/hayk77/ToDo-App#readme",
-  "devDependencies": {
-    "nodemon": "^1.18.10"
-  },
   "dependencies": {
-    "body-parser": "^1.18.3",
-    "ejs": "^2.6.1",
-    "express": "^4.16.4",
-    "mysql2": "^1.6.5",
-    "sequelize": "^4.43.0"
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "mongoose": "^4.11.9"
   }
 }
